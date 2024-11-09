@@ -1,0 +1,28 @@
+package hello;
+
+import java.util.StringJoiner;
+
+public class HelloWorld {
+    private String[] names = {"mlj", "lay"};
+
+    public static void main(String[] args) {
+//        System.out.println("hello.HelloWorld!");
+        HelloWorld test = new HelloWorld();
+        test.lianhe();
+    }
+
+    public void lianhe() {
+        //String.join
+        String s = String.join("++", names);
+        System.out.println(s);
+        //StringJoiner
+        StringJoiner jh = new StringJoiner(",", "Hello,", "!");
+        for (String name : names) {
+            jh.add(name);
+            System.out.println(jh);
+        }
+        Meiju sb = new Meiju();
+        sb.example("DONT");
+
+    }
+}
